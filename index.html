@@ -1,0 +1,257 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252827;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid blue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.left {
+  left: 0;
+}
+
+
+.right {
+  left: 50%;
+}
+
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+
+.right::after {
+  left: -16px;
+}
+
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .timeline::after {
+  left: 31px;
+  }
+  
+  
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+    <header class="menu-principal">
+        <div class="fundo">
+            <div class="imagem" >
+                <center>
+                <img src ="https://i.ytimg.com/vi/mFdUqqwzbVs/maxresdefault.jpg"  width="800" height="200"/>    
+                </center>
+             </div> 
+        </div>  
+    </header>
+   
+
+
+
+    
+    <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>SEC III</h2>
+                <p>Abaco com discos ou contas móveis para acelerar as operaçoes matematicas. </p>
+                
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>1642</h2>
+                <p>Em 1642 blaise Pascal inventou a primeira maquina de somar :pascalina ,a qual executava operacoes aritmeticas quando se giravam os discos interligados ,sendo assim a percusora das calculadoras mecanicas .</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>1671</h2>
+                <p>1671 na alemanha ,gottfried leibnitz inventou uma maquina muito parecida com pascalina ,que efetuava calculos de multiplicacao e divisao ,e qual se tornou a antecessora direta das calculadoras manuais .</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>1802</h2>
+                <p>Em 1802 na frança ,Joseph passou a ultilizar cartoes perfurados para controlar suas maquinas de tear e automatiza-las .</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>1822</h2>
+                <p>Em 1822 foi desenvolvido por um cientista ingles chamado Charles Babbage uma maquina diferencial que permita calculos como funcoes trigonometricas e logaritmas ,ultilizando os cartoes de Jacquard.Ja em 1834,desenvolveu uma maquina analitica capaz de executar as quatro opercoes ,armazenar dados em uma memoria de ate 1.000 numeros de 50 digitos e imprimir resultados .</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>1890</h2>
+                <p>Ja no ano de 1890 ,epoca do censo dos EUA ,Hermann Hollerith percebeu que so conseguiria terminar de apurar os dados do censo quando ja seria tempo de efetuar um novo censo (1900).Entao aperfeicoou os cartoes perfurados e inventou maquinas para manipula-los ,conseguindo com isso obter os resultados em tempo recorde ,isto é ,3 anos depois .  </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>1944</h2>
+                <p>Em 1944 o primeiro computador eletromecanico (construido em Havard)possuia o nome de MARK 1 ,era controlado por um programa e usava sistema decimal . Tinha cerca de 15 metros  de comprimento e 2.5 metros de altura ,era envolvido com uma caixa de de vidro e de aço inoxidavel.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>1943</h2>
+                <p>Em 1943 ,um projeto britanico ,sob a lideranca do matematico Alan Turing ,colocou em operacao uma serie de maquinas mais ambiciosas ,o COLOSSUS,para decifrar os codigos de Hitler ,pois ao inves de reles eletromecanicos ,cada nova maquina usava 2.000 valvulas eletronicas .</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>1951-1958 : A valvula a vacúo </h2>
+                <p>Eram valvulas eletronicas com aproximadamente o tamanho de uma lampada eletrica .Elas geravam muito calor provocando diversos problemas .Frequentemente queimavam e nao se sabia se a parada dizia respeito a programcao ou a maquina .O termo BUG para identificar problemas se deu por conta de uma parada nao programada do ENIAC .</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>1959-1964 : O transistor </h2>
+                <p>Em 1947 cientista da Bell Lab desenvolveram os transistor ,um pequeno dispositivo que transfere sinais eletronicos atraves de um resistor ..</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>1965-1970:O circuito integrado </h2>
+                <p>De 1958 a 1959 ,Robert Noyce ,Jean Hoerin,Jack kilby participaram do deenvolvimento do CI - Circuito Integrado .Em 1960, a IBM lança o IBM/360,cuja serie marcou uma nova tendencia na contrucao de computadores com o uso de CI ,ou pastilhas que ficaram conhecidas como chips .Esses chips incorporavam ,numa unica peça ,varias dezenas de transistores ja interligados ,formando circuitos eletronicos complexos . </p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>1971 - Até hoje : o microprocessador </h2>
+                <p>O primeiro microprocessador comercial foi inventado pela INTEL em 1971 para atender a uma empresa japonesa que precisava de um circuito integrado especial .A intel projectou o 4004  que era o circuito integrado programavel que trabalhava com registradores de 4 bits ,46 intruçoes ,clock de 740 khz e possuia cerca de 2300 transistores .Na decada de 70 os computadores ganharam drasticamente em termos de velocidade , confiabilidade e capacidade de armazenamento .E nesta fase que as aplicaçoes e potencias dos computadores sao notorias .</p>
+              </div>
+            </div>
+            <div class="container left">
+               <div class ="content">
+                <h2>Os mainframes </h2>  
+                <p>São computadores de grande porte que tem o poder de processar bilhoes de instrucoes por segundo e tem acesso a trilhoes de caracteres de dados .</p>                             
+              </div> 
+            </div>
+            <div class ="container right">
+                <div class="content">
+                    <h2>Os minicomputadores</h2>
+                    <p>Tambem chamados de midrange são computadores multiusuarios projetados para atender as necessidades das organizçoes de porte medio .Centenas ou as vezes milhares de usuarios podem estabelecer conexão (iserie da Ibm).</p>
+                </div>
+            </div>   
+            <div class = "container left">
+                <div class="content">
+                    <h2>O futuro ...</h2>
+                    <p>Redes interplanetarias ,maquinas menores do que uma bacteria ,computadores quanticos ou organicos ,robos inteligentes como iniciativa propria e quem sabe ate sentimentos .</p>
+                </div>
+            </div> 
+         </div>
+
+
+
+
+
+            </div>
+           
+</body>
+</html>
